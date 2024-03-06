@@ -12,20 +12,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
-@Composable
-fun PerfilScreen(navController: NavController) {
-    Box(modifier = Modifier
+    @Composable
+    fun PerfilScreen(navController: NavController, nome: String, idade: Int) {
+
+        Box(modifier = Modifier
         .fillMaxSize()
         .background(Color(0xFF329F6B))
         .padding(32.dp)
     ){
         Text(
-            text = "PERFIL",
+            text = "PERFIL - $nome - $idade anos",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White

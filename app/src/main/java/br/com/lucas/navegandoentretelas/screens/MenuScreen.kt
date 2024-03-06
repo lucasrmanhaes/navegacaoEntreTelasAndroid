@@ -24,6 +24,7 @@ import androidx.navigation.NavController
 
 @Composable
 fun MenuScreen(navController: NavController) {
+
     Box(modifier = Modifier
         .fillMaxSize()
         .background(Color(0xFF2C4EC7))
@@ -42,15 +43,19 @@ fun MenuScreen(navController: NavController) {
                 .align(Alignment.Center)
         ) {
             Button(
-                onClick = { navController.navigate("perfil") },
+
+                onClick = { navController.navigate("perfil/Lucas/25") },
+
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
             ) {
                 Text(text = "Perfil", fontSize = 20.sp, color = Color.Blue)
             }
             Spacer(modifier = Modifier.height(16.dp))
+
             Button(
-                onClick = { navController.navigate("pedidos") },
+                onClick = { navController.navigate("pedidos?numero=1234") },
+
                 colors = ButtonDefaults.buttonColors(Color.White),
                 modifier = Modifier.size(width = 200.dp, height = 48.dp)
             ) {
