@@ -24,6 +24,7 @@ import androidx.navigation.NavController
         .background(Color(0xFF329F6B))
         .padding(32.dp)
     ){
+            
         Text(
             text = "PERFIL - $nome - $idade anos",
             fontSize = 24.sp,
